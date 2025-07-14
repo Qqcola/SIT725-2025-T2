@@ -3,6 +3,7 @@ function changeText() {
   const number = getRandomNumberBetween(0, textsArray.length - 1);
   
   console.log("Index:", number);
+  console.log('This is logging');
   document.getElementById("heading").innerHTML = textsArray[number];
 }
 
