@@ -1,0 +1,22 @@
+{
+  "name": "prac2",
+  "version": "1.0.0",
+   "description": "SIT725 T2 Week 2 Prac",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Jacki Ngau",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
