@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Qqcola/SIT725-2025-T2/prac2.git"
   },
   "author": "Jacki Ngau",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Qqcola/SIT725-2025-T2/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/Qqcola/SIT725-2025-T2/prac2#readme",
   "dependencies": {
     "express": "^5.1.0"
   }
