@@ -1,0 +1,27 @@
+{
+  "name": "sit725-2025-t2-prac3",
+  "version": "1.0.0",
+  "description": "Today's workshop we will materialize CSS.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Materialize",
+    "HTML",
+    "JS",
+    "CSS"
+  ],
+  "author": "Jacki Ngau",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

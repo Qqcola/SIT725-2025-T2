@@ -1,0 +1,149 @@
+/* Layout helpers for header/navigation (if used elsewhere) */
+.navbar-size {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.user-image-size {
+  height: 56px;
+  margin: 4px 0;
+}
+
+/* Main page background and typography */
+.main-body {
+  background-color: #F28487;
+  color: white;
+  min-height: 100vh;
+  padding-top: 20px;
+  position: relative;
+}
+
+/* Intro block styling to reduce vertical gaps */
+.intro-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+/* Title tweaks */
+h1.title {
+  margin: 0;
+  line-height: 1.1;
+}
+
+/* Paragraph flow text adjustments */
+.flow-text {
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+/* Carousel spacing container */
+.carousel-wrapper {
+  margin-top: 4px;
+  margin-bottom: 30px;
+}
+
+/* Carousel itself */
+.carousel {
+  max-width: 100%;
+  overflow: visible;
+}
+
+/* Carousel image styling, also used for other zoomable images */
+.carousel .carousel-item img.zoomable {
+  height: 360px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  cursor: zoom-in;
+  position: relative;
+  z-index: 1;
+}
+
+/* Section containing image */
+.dog-section {
+  margin-top: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Card section below the image */
+.card-section {
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Image constraints */
+.dog-image {
+  max-height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Caption under image */
+.caption {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Click-me button appearance tweaks */
+.click-me-button {
+  background-color: #EE6E73;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Lightbox overlay so any enlarged image sits above all content */
+.custom-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200000;
+  padding: 12px;
+  cursor: zoom-out;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.custom-lightbox.visible {
+  opacity: 1;
+}
+
+/* Lightbox image styling */
+.custom-lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 8px solid white;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+/* Close button in the lightbox */
+.custom-lightbox .close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 26px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+}
