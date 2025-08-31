@@ -1,0 +1,62 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Week 7 - Socket Programming</title>
+
+  <!-- Materialize CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h3>My projects</h3>
+
+    <!-- Project Form -->
+    <form id="projectForm" class="row">
+      <div class="input-field col s3">
+        <input id="title" type="text" required />
+        <label for="title">Title</label>
+      </div>
+      <div class="input-field col s3">
+        <input id="image" type="text" required />
+        <label for="image">Image URL</label>
+      </div>
+      <div class="input-field col s3">
+        <input id="link" type="text" required />
+        <label for="link">Link</label>
+      </div>
+      <div class="input-field col s3">
+        <input id="description" type="text" required />
+        <label for="description">Description</label>
+      </div>
+      <div class="input-field col s12">
+        <button class="btn" type="submit">Add to database</button>
+      </div>
+    </form>
+
+    <!-- Live Socket.io demo -->
+    <h5>Random Number: <span id="number">—</span></h5>
+
+    <!-- Projects Container -->
+    <div class="row" id="projectContainer"></div>
+  </div>
+
+  <!-- jQuery & Materialize JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Load Socket.io before app script -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- App Script -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
